@@ -8,21 +8,34 @@
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://kit.fontawesome.com/1ad6aac996.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-black">
-    <nav>
-        <div class="flex justify-center items-center text-white font-mono font-bold space-x-8 mt-10  text-lg ">
+<body class="bg-black min-h-screen">
+    <nav class="px-4 py-6">
+        <!-- Mobile hamburger menu (shown on small screens) -->
+        <div class="md:hidden flex justify-end mb-4">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center text-white font-mono font-bold space-y-4 mb-6">
+            <a class="hover:text-[#fbf1c7] hover:underline w-full text-center py-2" href="index.html">Index</a>
+            <a class="hover:text-[#fbf1c7] hover:underline w-full text-center py-2" href="about.html">About</a>
+            <a class="hover:text-[#fbf1c7] hover:underline w-full text-center py-2" href="project.html">Projects</a>
+            <a class="hover:text-[#fbf1c7] hover:underline w-full text-center py-2" href="blog.html">Blogs</a>
+        </div>
+        
+        <!-- Desktop navigation (hidden on small screens) -->
+        <div class="hidden md:flex justify-center items-center text-white font-mono font-bold space-x-8 mt-4 text-lg">
             <a class="hover:text-[#fbf1c7] hover:underline" href="index.html">Index</a>
             <a class="hover:text-[#fbf1c7] hover:underline" href="about.html">About</a>
             <a class="hover:text-[#fbf1c7] hover:underline" href="project.html">Projects</a>
             <a class="hover:text-[#fbf1c7] hover:underline" href="blog.html">Blogs</a>
         </div>
     </nav>
-
-    <h2 class="font-bold font-mono text-3xl text-white mb-2 ml-35">My projects </h2>
-    <p class="font-mono text-2xl ml-35 mb-5 text-[#A9A9A9]">These are the projects I've worked on so far. It's not a lot yet, but I'm actively working on more. My projects include both hardware and software development.</p>
-
-
-    <section class="container mx-auto px-4 md:px-6 py-6">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 mb-10">
+        <h2 class="font-bold font-mono text-3xl text-white mb-2 ">My projects </h2>
+        <p class="font-mono text-2xl  mb-5 text-[#A9A9A9]">These are the projects I've worked on so far. It's not a lot yet, but I'm actively working on more. My projects include both hardware and software development.</p>
         <div class="space-y-6">
             <!-- Project 1 -->
             <a href="#" class="block border border-gray-700 hover:border-[#fbf1c7] transition-colors duration-300 p-8 rounded">
@@ -37,8 +50,6 @@
                     
                     
                 </div>
-                                    
-                
             </a>
 
             <!-- Project 2 -->
@@ -74,12 +85,22 @@
                 
             </a>
 
-           
-
-            
         </div>
-        
-    </section>
+
+    </div>
+
+
+    
+
+
+    
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
 
 
 

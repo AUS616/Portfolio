@@ -8,9 +8,26 @@
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://kit.fontawesome.com/1ad6aac996.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-black">
-    <nav>
-        <div class="flex justify-center items-center text-white font-mono font-bold space-x-8 mt-10  text-lg ">
+<body class="bg-black min-h-screen">
+    
+    <nav class="px-4 py-6">
+        
+        <div class="md:hidden flex justify-end mb-4">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center text-white font-mono font-bold space-y-4 mb-6">
+            <a class="hover:text-[#fbf1c7] hover:underline w-full text-center py-2" href="index.html">Index</a>
+            <a class="hover:text-[#fbf1c7] hover:underline w-full text-center py-2" href="about.html">About</a>
+            <a class="hover:text-[#fbf1c7] hover:underline w-full text-center py-2" href="project.html">Projects</a>
+            <a class="hover:text-[#fbf1c7] hover:underline w-full text-center py-2" href="blog.html">Blogs</a>
+        </div>
+        
+        
+        <div class="hidden md:flex justify-center items-center text-white font-mono font-bold space-x-8 mt-4 text-lg">
             <a class="hover:text-[#fbf1c7] hover:underline" href="index.html">Index</a>
             <a class="hover:text-[#fbf1c7] hover:underline" href="about.html">About</a>
             <a class="hover:text-[#fbf1c7] hover:underline" href="project.html">Projects</a>
@@ -18,30 +35,48 @@
         </div>
     </nav>
 
-
-    <div class="max-width-2xl mx-auto px-10 py-8 ">
-        <h2 class="font-bold font-mono text-3xl text-white mb-10 ">About me </h2>
-        <div class="mr-10 ml-10">
-            <p class="text-white text-2xl font-mono">I'm Austrin James, a BTech student at Model Engineering College, Getting into Electrical and Electronics Engineering. When I’m not buried in circuit diagrams,You can find me tinkering with code, learning new frameworks, or working on projects. When I'm not working, you'll find me at the gym, playing football, or watching films. I’m deeply interested in both the hardware and software sides of engineering, and I’m committed to developing both skills equally. I enjoy tinkering with electronics, experimenting with different components,and figuring out how everything works together. I like to think about different things and used to be really into philosophy and reading philosophical works. I also write short blogs from time to time, which you can check out <a href="" class="underline decoration-dotted decoration-2 underline-offset-4 hover:text-[#fbf1c7]">here</a>.</p>
+    
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <h2 class="font-bold font-mono text-2xl sm:text-3xl text-white mb-6 sm:mb-10">About me</h2>
+        
+        
+        <div class="mx-2 sm:mx-6 lg:mx-10">
+            <p class="text-white text-lg sm:text-xl lg:text-2xl font-mono">
+                I'm Austrin James, a BTech student at Model Engineering College, Getting into Electrical and Electronics Engineering. When I'm not buried in circuit diagrams, You can find me tinkering with code, learning new frameworks, or working on projects. When I'm not working, you'll find me at the gym, playing football, or watching films. I'm deeply interested in both the hardware and software sides of engineering, and I'm committed to developing both skills equally. I enjoy tinkering with electronics, experimenting with different components, and figuring out how everything works together. I like to think about different things and used to be really into philosophy and reading philosophical works. I also write short blogs from time to time, which you can check out <a href="blog.html" class="underline decoration-dotted decoration-2 underline-offset-4 hover:text-[#fbf1c7]">here</a>.
+            </p>
         </div>
-        <br>
-        <h2 class="font-bold font-mono text-3xl text-white mb-2">Socials</h2>
-        <div class="mr-10 ml-10">
-            <p class="text-white font-mono text-2xl">Let's connect! You can reach me through the links below:</p>
+        
+        
+        <h2 class="font-bold font-mono text-2xl sm:text-3xl text-white mt-8 sm:mt-10 mb-2 sm:mb-4">Socials</h2>
+        <div class="mx-2 sm:mx-6 lg:mx-10">
+            <p class="text-white font-mono text-lg sm:text-xl lg:text-2xl">Let's connect! You can reach me through the links below:</p>
             
-            <div class="flex flex-col gap-2 text-white font-bold font-mono text-2xl mt-2">
-            <a class=" hover:text-[#fbf1c7]" href="https://github.com/AUS616" target="_blank" ><i class="fa-brands fa-github"></i> Github</a>
-            <a class=" hover:text-[#fbf1c7]" target="_blank" href="https://www.linkedin.com/in/austrin-james-8556b8351/"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
-            <a class="hover:text-[#fbf1c7]" target="_blank" href=""><i class="fa-solid fa-envelope"></i> Email</a>
-            <a class=" hover:text-[#fbf1c7]" target="_blank" href=""><i class="fa-solid fa-code"></i> Source code</a>
+            <div class="flex flex-col gap-3 text-white font-bold font-mono text-lg sm:text-xl lg:text-2xl mt-4">
+                <a class="hover:text-[#fbf1c7] transition-colors duration-200" href="https://github.com/AUS616" target="_blank">
+                    <i class="fa-brands fa-github w-8 inline-block"></i> Github
+                </a>
+                <a class="hover:text-[#fbf1c7] transition-colors duration-200" target="_blank" href="https://www.linkedin.com/in/austrin-james-8556b8351/">
+                    <i class="fa-brands fa-linkedin w-8 inline-block"></i> Linkedin
+                </a>
+                <a class="hover:text-[#fbf1c7] transition-colors duration-200" target="_blank" href="">
+                    <i class="fa-solid fa-envelope w-8 inline-block"></i> Email
+                </a>
+                <a class="hover:text-[#fbf1c7] transition-colors duration-200" target="_blank" href="">
+                    <i class="fa-solid fa-code w-8 inline-block"></i> Source code
+                </a>
             </div>
-            
-            
         </div>
-        
-        
+    </main>
 
-    </div>
+   
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
 
     
 
