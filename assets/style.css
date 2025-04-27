@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'header';
+    src: url(../fonts/TupacMagrath-K7KdD.otf);
+}
+
+h1{
+    
+    font-family: 'header';
+    
+
+}
