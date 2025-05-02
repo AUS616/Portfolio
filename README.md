@@ -1,6 +1,8 @@
 # Portfolio site
 A simple and minimalist portfolio site.
 
+[Link](https://laufey.is-a.dev/)
+
 ## Tech Stack 
 - HTML
 - CSS
