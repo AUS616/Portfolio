@@ -1,7 +1,7 @@
 # Portfolio site
 A simple and minimalist portfolio site.
 
-I occasionally write short technical blogs, which you can explore [here](https://laufey.is-a.dev/)!
+[Link](https://laufey.is-a.dev/)
 
 ## Tech Stack 
 - HTML
