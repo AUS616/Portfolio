@@ -1,23 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Index</title>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<link rel="icon" type="image/x-icon" href="https://i.ibb.co/4g8G5LmZ/faviicon.png">
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Austrin</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="icon" type="image/x-icon" href="https://i.ibb.co/4g8G5LmZ/faviicon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
 </head>
-<body class="bg-black">
-    <section id="main" class="w-full h-screen flex flex-col items-center justify-center">
-        <h1 class="text-6xl md:text-9xl font-bold text-white">Austrin</h1>
-        <p class="text-sm md:text-lg text-white font-mono mb-10">A college student.</p>
-        <div class="flex font-mono space-x-8 text-sm md:text-lg">
-            <a href="index.html" class="text-white hover:text-[#fbf1c7] hover:underline">index</a>
-            <a href="about.html" class="text-white hover:text-[#fbf1c7] hover:underline">About</a>
-            <a href="https://github.com/AUS616?tab=repositories" class="text-white hover:text-[#fbf1c7] hover:underline" target="_blank">Projects</a>
-            
+
+<body class="bg-black text-white font-mono">
+
+  <main class="max-w-7xl mx-auto px-6 py-12">
+
+    <!-- GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <!-- LEFT COLUMN -->
+      <div class="md:col-span-1 space-y-6">
+
+        <!-- Name -->
+        <h1 class="text-4xl md:text-5xl font-bold">
+          Austrin James
+        </h1>
+
+        <!-- Profile Card -->
+        <div class="border border-white/20 rounded-xl p-5 space-y-4">
+          <img
+            src="https://i.pinimg.com/originals/73/e9/91/73e991010ec134fbd0ab475172bd13f6.gif"
+            alt="Austrin"
+            class="w-32 h-32 rounded-lg object-cover"
+          />
+
+          <p class="text-sm text-white/80 leading-relaxed">
+            I’m a college student interested in embedded systems, electric vehicles,
+            and low-level programming. Currently exploring STM32.  
+          </p>
+
+          <div class="flex space-x-4 text-sm">
+            <a href="https://github.com/AUS616" target="_blank" class="hover:underline">
+              GitHub
+            </a>
+            <a href="mailto:austrinjames616@gmail.com" class="hover:underline">
+              Email
+            </a>
+          </div>
         </div>
-    </section>
+
+        <div class="border border-white/20 rounded-xl p-5 space-y-4">
+            <img
+              src="https://cdn.prod.website-files.com/61e6c06a23cb13bf76051194/64651efc9b130d79321de528_limbo.gif"
+              alt="Ball"
+              class="w-full h-full rounded-lg object-contain"
+            />
+          </div>
+
+      </div>
+
+      
+
+      <!-- RIGHT COLUMN -->
+      <div class="md:col-span-2 space-y-10">
+
+        <!-- ABOUT -->
+        <section class="border border-white/20 rounded-xl p-6">
+            <h2 class="text-2xl font-semibold mb-6">Languages & Skills</h2>
+          
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6">
+          
+              <!-- C -->
+              <div class="flex flex-col items-center gap-2 text-white/80 hover:text-white transition">
+                <i class="devicon-c-plain text-4xl"></i>
+                <span class="text-xs">C</span>
+              </div>
+
+              <div class="flex flex-col items-center gap-2 text-white/80 hover:text-white transition">
+                <i class="devicon-python-plain text-4xl"></i>
+                <span class="text-xs">Python</span>
+              </div>
+          
+              <!-- C++ -->
+              <div class="flex flex-col items-center gap-2 text-white/80 hover:text-white transition">
+                <i class="devicon-react-plain text-4xl"></i>
+                <span class="text-xs">React</span>
+              </div>
+          
+              <!-- Embedded C -->
+              <div class="flex flex-col items-center gap-2 text-white/80 hover:text-white transition">
+                <i class="devicon-embeddedc-plain text-4xl"></i>
+                <span class="text-xs">STM32</span>
+              </div>
+          
+          
+              <!-- Linux -->
+              <div class="flex flex-col items-center gap-2 text-white/80 hover:text-white transition">
+                <i class="devicon-linux-plain text-4xl"></i>
+                <span class="text-xs">Linux</span>
+              </div>
+          
+              <!-- Git -->
+              <div class="flex flex-col items-center gap-2 text-white/80 hover:text-white transition">
+                <i class="devicon-git-plain text-4xl"></i>
+                <span class="text-xs">Git</span>
+              </div>
+          
+              <!-- GitHub -->
+              <div class="flex flex-col items-center gap-2 text-white/80 hover:text-white transition">
+                <i class="devicon-github-original text-4xl"></i>
+                <span class="text-xs">GitHub</span>
+              </div>
+          
+              <!-- UART / SPI / I2C -->
+              <div class="flex flex-col items-center gap-2 text-white/80 hover:text-white transition">
+                <span class="text-3xl">⚡</span>
+                <span class="text-xs text-center">UART / SPI / I2C</span>
+              </div>
+          
+            </div>
+          </section>
+          
+
+        <!-- PROJECTS -->
+        <section class="border border-white/20 rounded-xl p-6">
+            <h2 class="text-2xl font-semibold mb-6">Projects</h2>
+          
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          
+              <!-- MARK-I -->
+              <div class="border border-white/10 rounded-lg overflow-hidden hover:border-white/30 transition">
+                <img
+                  src="/assets/IMG_20260206_195156.jpg"
+                  alt="Mark-I"
+                  class="w-full h-auto object-contain bg-black"
+                />
+          
+                <div class="p-4">
+                  <h3 class="font-semibold mb-2">Mark-I</h3>
+                  <p class="text-sm text-white/70 mb-3">
+                    MARK-I is a small RC plane constructed from balsa wood and based on the
+                    Selig S123 airfoil, optimized for high lift and stable low-speed performance.
+                  </p>
+                </div>
+              </div>
+          
+              <!-- MARK-II -->
+              <div class="border border-white/10 rounded-lg overflow-hidden hover:border-white/30 transition">
+                <img
+                  src="/assets/IMG20260206060009.jpg"
+                  alt="Mark-II"
+                  class="w-full h-auto object-contain bg-black"
+                />
+          
+                <div class="p-4">
+                  <h3 class="font-semibold mb-2">Mark-II</h3>
+                  <p class="text-sm text-white/70 mb-3">
+                    MARK-II is a larger RC aircraft designed around the Eppler E23 airfoil,
+                    aimed at improved lift and smoother flight characteristics.
+                  </p>
+                </div>
+              </div>
+          
+              <!-- MESH SHELL -->
+              <div class="border border-white/10 rounded-lg overflow-hidden hover:border-white/30 transition">
+                <img
+                  src="https://opengraph.githubassets.com/1/AUS616/mesh-shell"
+                  alt="Mesh Shell GitHub Preview"
+                  class="w-full h-auto object-contain bg-black"
+                />
+          
+                <div class="p-4">
+                  <h3 class="font-semibold mb-2">Mesh Shell</h3>
+                  <p class="text-sm text-white/70 mb-3">
+                    A custom Unix-like command-line shell implemented in C, supporting
+                    command parsing, process creation, and execution using fork and exec.
+                  </p>
+                  <a
+                    href="https://github.com/AUS616/mesh-shell"
+                    target="_blank"
+                    class="text-sm hover:underline"
+                  >
+                    View project →
+                  </a>
+                </div>
+              </div>
+          
+              <!-- MINI GREP -->
+              <div class="border border-white/10 rounded-lg overflow-hidden hover:border-white/30 transition">
+                <img
+                  src="https://opengraph.githubassets.com/1/AUS616/mini-grep"
+                  alt="Mini Grep GitHub Preview"
+                  class="w-full h-auto object-contain bg-black"
+                />
+          
+                <div class="p-4">
+                  <h3 class="font-semibold mb-2">Mini Grep</h3>
+                  <p class="text-sm text-white/70 mb-3">
+                    A simple implementation of grep in C, supporting case-insensitive
+                    searches and pattern matching.
+                  </p>
+                  <a
+                    href="https://github.com/AUS616/mini-grep"
+                    target="_blank"
+                    class="text-sm hover:underline"
+                  >
+                    View project →
+                  </a>
+                </div>
+              </div>
+          
+            </div>
+          </section>
+
+          
+          
+
+      </div>
+
+    </div>
+
+    <footer class="mt-20 border-t border-white/15">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-6
+                    flex flex-col sm:flex-row items-center
+                    justify-between gap-4 text-sm text-white/60">
+      
+          <span>
+            © 2026 Austrin James
+          </span>
+      
+          <div class="flex gap-4">
+            <a
+              href="https://github.com/AUS616"
+              target="_blank"
+              class="hover:text-white transition"
+            >
+              GitHub
+            </a>
+      
+            <a
+              href="mailto:austrinjames616@gmail.com"
+              class="hover:text-white transition"
+            >
+              Email
+            </a>
+          </div>
+      
+        </div>
+      </footer>
+      
+
+  </main>
+
 </body>
 </html>
